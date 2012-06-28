@@ -13,5 +13,5 @@ Gem::Specification.new do |s|
   s.summary     = "Madgab random string generator"
   s.description = "Generates random strings of words that can be used for things like password suggestions."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "README.markdown"]
 end
