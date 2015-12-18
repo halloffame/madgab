@@ -8,7 +8,10 @@ module Madgab
 
   class << self
     # Generates a more random string of words like in the game Mad Gab
-    def generate(string_together=DEFAULT_STRING, join_with=DEFAULT_JOIN)
+    def generate(options = {})
+      string_together = options[:string_together] || DEFAULT_STRING
+      join_with = options[:default_string] || DEFAULT_JOIN
+
       unless defined? @@diction
         self.diction
       end
